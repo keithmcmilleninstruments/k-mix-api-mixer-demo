@@ -1,0 +1,18 @@
+Description: Drag n' Drop up to 8 audio files that are automatically assigned to tracks/channels/faders 1-8. gain, panning, dsp can be controlled per track. k-mix transport controls ['play', 'stop', 'back', 'record']. record will save audio output
+
+JS:
+	modules: ['midi', 'midi-k-mix', 'samples', 'save-audio', 'web-audio-dsp:Tone/Tuna']
+	midi: basic midi connectivity
+	midi-k-mix: onmidimessage logic. requires ['web-audio', 'samples', 'Tone/Tuna'] 
+	samples: load and export samples
+	save-audio: saves audio output, possibly in realtime
+	web-audio: global? audio context, 
+
+CSS:
+	components: ['k-mix', 'drag-n-drop', 'video']
+
+
+
+Resources:
+	https://github.com/kylestetz/AudioDrop
+	http://wavesurfer-js.org/

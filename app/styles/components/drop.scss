@@ -1,0 +1,18 @@
+#drop {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 2px dashed #333;
+	padding: 10px;
+	background-color: #efefef;
+	min-height: 100px;
+	cursor: copy;
+}
+#drop::after {
+	content: 'Audio Drop Zone';
+	text-align: center;
+	color: #333;
+	width: 100%;
+	line-height: 75px;
+	position: absolute;
+	font-weight: 600;
+}
